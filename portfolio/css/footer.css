@@ -1,0 +1,39 @@
+.footeraboveline {
+    /* padding-left: 5vw !important; */
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: white;
+}
+
+.bottomline {
+    height: 1px !important;
+    color: #fff;
+}
+
+.footeragreement,
+.footersafety,
+.year {
+    font-family: 'Montserrat';
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    color: white !important;
+    --bs-link-hover-color: white;
+    --bs-link-color: white;
+    position: relative;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.tg {
+    position: relative;
+    --bs-link-hover-color: white;
+    --bs-link-color: white;
+}
+
+
+/* .scr {
+    margin-left: auto !important;
+    margin-right: auto !important;
+} */

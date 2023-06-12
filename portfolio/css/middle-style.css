@@ -1,0 +1,140 @@
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 300%;
+    }
+}
+
+.biglogo {
+    position: relative;
+    top: 0;
+    -webkit-animation: parry 4s infinite;
+    animation: parry 4s infinite;
+}
+#square2 .biglogo {
+    margin-right: 0;
+    margin-left: 5vw;
+}
+#square3 .biglogo {
+    margin-left: 0;
+    margin-right: 5vw;
+}
+
+
+#square2 {
+    margin-bottom: 25vh;
+}
+
+#square2 .accordion-item,
+#square3 .accordion-item {
+    margin-bottom: 4vh;
+    border: unset !important;
+    background: transparent !important;
+    padding: 0 !important;
+    outline: none !important;
+}
+
+#square2 .accordion-header,
+#square3 .accordion-header {
+    outline: none !important;
+}
+
+#square2 .accordion-button,
+#square3 .accordion-button {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #be0fc4;
+    border-color: #be0fc4;
+    font-family: 'Montserrat';
+    font-style: normal;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+    z-index: 1;
+    position: relative;
+    outline: none !important;
+}
+
+#square2 .accordion-button:focus,
+#square3 .accordion-button:focus {
+    outline: none !important;
+    box-shadow: unset !important;
+}
+
+#square2 .accordion-button:after,
+#square3 .accordion-button:after {
+    background-image: unset!important;
+}
+
+#square2 .accordion-button:before,
+#square3 .accordion-button:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #165f81, #940a99, #04567c);
+    background-size: 400%;
+    border-radius: 40px;
+    transition: .5s;
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate-btn 15s linear infinite;
+}
+
+#square2 .accordion-button:hover,
+#square3 .accordion-button:hover {
+    color: white !important;
+    background-color: #4f37ef;
+}
+
+#square2 .accordion-button:not(.collapsed),
+#square3 .accordion-button:not(.collapsed) {
+    box-shadow: unset !important;
+}
+
+#square2 .accordion-body,
+#square3 .accordion-body {
+    padding-top: 5vh;
+    text-align: left;
+    color: #fff;
+    outline: none !important;
+    font-size: 18px;
+}
+
+@-webkit-keyframes parry {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 4vh;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes parry {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 4vh;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.middle-second-container {
+    margin-top: -10vh;
+}

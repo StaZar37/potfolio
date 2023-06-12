@@ -1,0 +1,220 @@
+.slider {
+    position: relative;
+    padding: 0px 100px;
+}
+
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slider__item {
+    text-align: center;
+    position: relative;
+    width: 38% !important;
+    margin: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.slider-bg-1 {
+    background: url('../photo/site1.png') no-repeat;
+}
+
+.slider-bg-2 {
+    background: url('../photo/site2.png') no-repeat;
+}
+
+.slider-bg-3 {
+    background: url('../photo/site3.png') no-repeat;
+}
+
+.slider-bg-4 {
+    background: url('../photo/site4.png') no-repeat;
+}
+
+.slider-bg-5 {
+    background: url('../photo/site5.png') no-repeat;
+}
+
+.slider-bg-6 {
+    background: url('../photo/nimfeya.png') no-repeat;
+}
+
+.slider__item:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    opacity: .9;
+}
+
+.slider__item .w-100 {
+    transition: .2s;
+}
+
+.slider__item:hover .w-100 {
+    background: rgba(0, 0, 0, .6);
+}
+
+.slider__item:hover .more {
+    opacity: 1;
+}
+
+.more {
+    height: 35px;
+    opacity: 0;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid #be0fc4;
+}
+
+.more:hover {
+    color: #fff !important;
+    background: #be0fc4;
+}
+
+
+/* .more:hover,
+.more:active {
+    -moz-text-shadow: 0 0 20px #a294ee;
+    -webkit-text-shadow: 0 0 20px #a294ee;
+    text-shadow: 0 0 20px #a294ee;
+} */
+
+.slider .slick-arrow {
+    position: absolute;
+    z-index: 10;
+    font-size: 0;
+    width: 25px;
+    height: 60px;
+    border: none;
+    margin: -60px 0px 0px 0px;
+}
+
+.slider .slick-arrow.slick-prev {
+    left: 45px;
+    background: url('../photo/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+    top: 50%;
+}
+
+.slider .slick-arrow.slick-next {
+    right: 45px;
+    background: url('../photo/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+    top: 50%;
+}
+
+.slider .slick-arrow.slick-prev:focus-visible,
+.slider .slick-arrow.slick-next:focus-visible {
+    outline: none;
+}
+
+.slider .slick-dots {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+    padding-bottom: 3vh;
+    /* margin-left: 0; */
+    margin-right: 30px;
+}
+
+.slider .slick-dots li {
+    list-style: none;
+    margin: 0px 10px;
+}
+
+.slider .slick-dots button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #be0fc4;
+    border-radius: 50%;
+    border: none;
+}
+
+.slider .slick-dots li.slick-active button {
+    background-color: transparent;
+    border: 1px solid #be0fc4;
+}
+
+.slick-arrow:hover {
+    filter: invert(34%) sepia(99%) saturate(6275%) hue-rotate(295deg) brightness(115%) contrast(130%);
+}
+
+.slider__item::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background-image: conic-gradient(transparent, transparent, transparent, #d400d4);
+    animation: animate 20s linear infinite;
+    animation-delay: -10s;
+}
+
+.slider__item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background-image: conic-gradient(transparent, transparent, transparent, #d400d4);
+    filter: blur(20%);
+    animation: animate 20s linear infinite;
+}
+
+
+/* .slider__item::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background-image: conic-gradient(transparent, transparent, transparent, #be0fc4);
+    animation: animate 20s linear infinite;
+} */
+
+
+/* =======
+    width: 500px;
+    height: 700px;
+    background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+    animation: animate 4s linear infinite;
+} */
+
+.slider__item span {
+    position: absolute;
+    inset: 4px;
+    border-radius: 10px;
+    z-index: 1;
+    background: #040B1D;
+}
+
+.slider__item .slider-img {
+    position: relative;
+    background-size: cover;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

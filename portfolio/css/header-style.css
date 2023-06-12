@@ -1,0 +1,143 @@
+header {
+    background: url("../photo/header_bg.jpg");
+    width: 100%;
+    height: 1050px;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.navbar-toggler {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    position: relative;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../photo/menu.svg) !important;
+    background-size: cover;
+}
+
+.nv-bg {
+    display: block;
+    background: none;
+    transition: .3s;
+    z-index: 1;
+    padding: 0;
+}
+
+.nv-bg.active {
+    background: #040B1D;
+}
+
+.nv-bg .logo {
+    z-index: 1;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: bold !important;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    -moz-text-shadow: 0 0 20px #be0fc4;
+    -webkit-text-shadow: 0 0 20px #be0fc4;
+    text-shadow: 0 0 20px #be0fc4;
+}
+
+.header-underline {
+    position: relative;
+    /*задаём цвет ссылки*/
+    text-decoration: none;
+    /*убираем подчёркивание*/
+}
+
+.header-underline:after {
+    display: block;
+    position: absolute;
+    right: 0;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 2px;
+    /*задаём ширину линии*/
+    background-color: #be0fc4;
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.4s ease-out;
+    /*задаём время анимации*/
+}
+
+.header-underline.active:after {
+    width: 100%;
+}
+
+.header-underline:hover:after,
+.header-underline:focus:after {
+    width: 100%;
+    /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+
+
+
+.btn-order {
+    font-style: "Montserrat";
+    font-style: normal;
+    background-color: #be0fc4;
+    border-color: #be0fc4;
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    width: 350px !important;
+    border-radius: 15px;
+    z-index: 1;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.btn-order:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #165f81, #940a99, #04567c);
+    background-size: 400%;
+    border-radius: 20px;
+    transition: .5s;
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate-btn 15s linear infinite;
+}
+
+.btn-order:hover {
+    color: white !important;
+    background-color: #4f37ef;
+}
+
+.btn-order:hover,
+.btn-order:active {
+    box-shadow: 0 0 14px #4f37ef;
+}
+@keyframes animate-btn {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 300%;
+    }
+}

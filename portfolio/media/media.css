@@ -1,0 +1,329 @@
+@media (min-width: 2200px) and (max-width: 2560px) {
+    header {
+        height: 1500px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .main-header,
+    .bigtext {
+        font-size: 55px;
+    }
+    .small-main-header {
+        font-size: 30px;
+    }
+    .biglogo {
+        width: 500px;
+    }
+    .sqr {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-header,
+    .bigtext {
+        font-size: 50px;
+    }
+    .biglogo {
+        width: 450px;
+    }
+    #square3 .biglogo {
+        margin-left: -4vw;
+    }
+    .sqr {
+        font-size: 26px;
+    }
+    .nav-item {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .biglogo {
+        width: 400px;
+    }
+    #square3 .biglogo {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-header,
+    .bigtext {
+        font-size: 45px;
+    }
+    .small-main-header {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .btn-order {
+        font-size: 30px;
+        width: 300px !important;
+        height: 60px;
+    }
+    .sqr {
+        font-size: 24px;
+    }
+    @-webkit-keyframes parry {
+        0% {
+            top: 0;
+        }
+        50% {
+            top: 50px;
+        }
+        100% {
+            top: 0;
+        }
+    }
+    @keyframes parry {
+        0% {
+            top: 0;
+        }
+        50% {
+            top: 50px;
+        }
+        100% {
+            top: 0;
+        }
+    }
+    .nav-link {
+        color: #be0fc4 !important;
+    }
+    .accordion {
+        margin-top: 5vh;
+    }
+    .biglogo {
+        margin-top: -2vh;
+    }
+    #square3 .biglogo {
+        margin-top: -12vh;
+        margin-right: 0;
+    }
+    #square2 .biglogo {
+        margin-left: 0;
+    }
+    #square7 .bigtext {
+        margin-top: -5vh;
+    }
+    #headingTwo,
+    #headingTwo2 {
+        margin-top: -2vh;
+    }
+    .footeragreement {
+        text-align: end;
+    }
+    .footersafety {
+        text-align: end;
+        margin-top: -3vh !important;
+    }
+    .bg-circle {
+        opacity: 0.6;
+    }
+    /* .bg-circle.bc1 {
+        top: 900px;
+    }
+    .bg-circle.bc2 {
+        top: 1376px;
+    }
+    .bg-circle.bc3 {
+        top: 1967px;
+    }
+    .bg-circle.bc4 {
+        top: 27000px;
+    } */
+}
+
+@media (max-width: 768px) {
+    #square2 .accordion-body,
+    #square3 .accordion-body {
+        font-size: 16px;
+    }
+    #square7 .bigtext {
+        margin-top: -10vh;
+    }
+    .slider {
+        margin-top: -5vh;
+        padding: 0px 60px;
+    }
+    .bg-circle {
+        opacity: 1;
+    }
+    .nav-item {
+        font-size: 14px;
+    }
+    header {
+        height: 950px;
+    }
+    /* .bg-circle.bc1 {
+        top: 1100px;
+    }
+    .bg-circle.bc2 {
+        top: 1700px;
+    }
+    .bg-circle.bc3 {
+        top: 2300px;
+    }
+    .bg-circle.bc4 {
+        top: 2900px;
+    } */
+}
+
+@media (max-width: 576px) {
+    .btn-order {
+        font-size: 25px;
+        width: 250px !important;
+        height: 50px;
+    }
+    .sqr {
+        width: 70vw;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .text-info {
+        width: 70vw;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .biglogo {
+        width: 300px;
+    }
+    /* #square2 .accordion-body,
+    #square3 .accordion-body {
+    font-size: 14px;
+    } */
+    #square2 .accordion-button,
+    #square3 .accordion-button {
+        font-size: 18px;
+    }
+    .slider__item {
+        height: 400px;
+    }
+    .bg-circle {
+        opacity: 1;
+    }
+    .slider {
+        padding: 0px 0px;
+    }
+    header {
+        height: 850px;
+    }
+    #square2 .bigtext {
+        margin-top: -15vh;
+    }
+    /* .bg-circle.bc1 {
+        top: 900px;
+    }
+    .bg-circle.bc2 {
+        top: 1300px;
+    }
+    .bg-circle.bc3 {
+        top: 1700px;
+    }
+    .bg-circle.bc4 {
+        top: 2700px;
+    } */
+    .bg-circle {
+        filter: blur(65px);
+    }
+    .slider-bg-1 {
+        background: url('../photo/1(2).png') no-repeat;
+    }
+    .slider-bg-2 {
+        background: url('../photo/2(2).png') no-repeat;
+    }
+    .slider-bg-3 {
+        background: url('../photo/3(2).png') no-repeat;
+    }
+    .slider-bg-4 {
+        background: url('../photo/4(2).png') no-repeat;
+    }
+    .slider-bg-5 {
+        background: url('../photo/5(2).png') no-repeat;
+    }
+    .slider-bg-6 {
+        background: url('../photo/nimfeya.png') no-repeat;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-header,
+    .bigtext {
+        font-size: 8vw;
+        line-height: 45px;
+    }
+    .small-main-header {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .slider-bg-3 {
+        background: url('../photo/3(3).png') no-repeat;
+    }
+    .slider-bg-5 {
+        background: url('../photo/5(3).png') no-repeat;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-header,
+    .bigtext {
+        line-height: 35px;
+    }
+    .small-main-header {
+        font-size: 6vw;
+        line-height: 30px;
+    }
+    .sqr {
+        font-size: 15px;
+    }
+    .text-info {
+        font-size: 14px;
+    }
+    .nv-bg {
+        margin-top: -3vw;
+    }
+    .bg-circle {
+        filter: blur(50px);
+    }
+    /* .bg-circle.bc1 {
+        top: 850px;
+    }
+    .bg-circle.bc2 {
+        top: 1400px;
+    }
+    .bg-circle.bc3 {
+        top: 2000px;
+    }
+    .bg-circle.bc4 {
+        top: 2700px;
+    } */
+    .slider-bg-1 {
+        background: url('../photo/1.png') no-repeat;
+    }
+    .slider-bg-2 {
+        background: url('../photo/2.png') no-repeat;
+    }
+    .slider-bg-3 {
+        background: url('../photo/3.png') no-repeat;
+    }
+    .slider-bg-4 {
+        background: url('../photo/4.png') no-repeat;
+    }
+    .slider-bg-5 {
+        background: url('../photo/5.png') no-repeat;
+    }
+    .slider-bg-6 {
+        background: url('../photo/nimfeya.png') no-repeat;
+    }
+}
+
+@media (max-width: 405px) {
+    .footeraboveline,
+    .footeragreement,
+    .footersafety,
+    .year {
+        font-size: 13.5px !important;
+    }
+}
